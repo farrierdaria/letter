@@ -1,21 +1,9 @@
-let burgerMenu = document.querySelector('.header__nav-burger')
-let navMenu= document.querySelector('.menu-container')
-let navContainer= document.querySelector('.header__nav')
-
-let ifClick;
+let burgerMenu = document.querySelector('.header__nav-burger');
+let menuContainer = document.querySelector('.menu-container');
+let navContainer = document.querySelector('.header__nav');
 
 function BurgerClicked() {
-
-    if(burgerMenu.classList.contains('active')){
-        burgerMenu.classList.remove('active')
-        menucontainer.classList.remove('active')
-        navContainer.classList.remove('active')     
-    }
-    else {
-        burgerMenu.classList.add('active')
-        menucontainer.classList.add('active')
-        navContainer.classList.add('active')
-    }
-    
-
+  burgerMenu.classList.toggle('active');
+  menuContainer.classList.toggle('active');
+  navContainer.classList.toggle('active');
 }
